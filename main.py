@@ -7,10 +7,10 @@ import rich
 load_dotenv()
 set_tracing_disabled(disabled=True)
 
-OPENROUTER_API_Key = os.getenv("OPENROUTER_API_Key")
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 # --------------------------
 client = AsyncOpenAI(
-    api_key=OPENROUTER_API_Key,
+    api_key=OPENROUTER_API_KEY,
     base_url="https://openrouter.ai/api/v1"
 )
 
